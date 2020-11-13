@@ -25,7 +25,11 @@ const Card = ({ blog }) => {
 					<Link href={`/blogs/${blog.slug}`}>
 						<a>
 							<img
+<<<<<<< HEAD
 								src={`http://localhost:8000/${blog.photos[0]}`}
+=======
+								src={`${API}/blog/photo/${blog.slug}`}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 								alt=""
 								className="list-item-picture"
 							/>

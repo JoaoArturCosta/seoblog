@@ -99,7 +99,10 @@ const SingleBlog = ({ blog, query }) => {
 
 	useEffect(() => {
 		window.addEventListener("scroll", hideBar);
+<<<<<<< HEAD
 		console.log(blog);
+=======
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 	});
 
 	return (
@@ -111,12 +114,20 @@ const SingleBlog = ({ blog, query }) => {
 						<div className="app-wrapper">
 							<section className="hero">
 								<img
+<<<<<<< HEAD
 									// src={`${API}/blog/photo/${blog.slug}`}
 									src={`http://localhost:8000/${blog.photos[0]}`}
 									alt={blog.title}
 									className="hero-img"
 								/>
 								<Gallery photos={blog.photos} />
+=======
+									src={`${API}/blog/photo/${blog.slug}`}
+									alt={blog.title}
+									className="hero-img"
+								/>
+								<Gallery slug={blog.slug} />
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 							</section>
 							<div className="ExpandedView_Info">
 								{hidden && (
@@ -221,9 +232,15 @@ const SingleBlog = ({ blog, query }) => {
 								<section id="overview" className="ExpandedView_Overview">
 									<div className="ExpandedView_Overview_header_wrapper">
 										<div className="ExpandedView_Overview_header_Title">
+<<<<<<< HEAD
 											<h2>{blog.name}</h2>
 											<div className="ExpandedView_Location_wrapper">
 												{blog.location}
+=======
+											{/* <h2>{location.state.data.name}</h2> */}
+											<div className="ExpandedView_Location_wrapper">
+												{/* {location.state.data.location} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 											</div>
 										</div>
 										<div className="ExpandedView_Overview_Details">
@@ -234,7 +251,11 @@ const SingleBlog = ({ blog, query }) => {
 												/> */}
 											</div>
 											<div className="ExpandedView_Overview_Details_part">
+<<<<<<< HEAD
 												{/* {blog.distance} */}
+=======
+												{/* {location.state.data.distance} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 											</div>
 											<div className="ExpandedView_Overview_Details_Icon">
 												{/* <img
@@ -243,7 +264,11 @@ const SingleBlog = ({ blog, query }) => {
 												/> */}
 											</div>
 											<div className="ExpandedView_Overview_Details_part">
+<<<<<<< HEAD
 												{blog.dificulty}
+=======
+												{/* {location.state.data.dificulty} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 											</div>
 											<div className="ExpandedView_Overview_Details_Icon">
 												{/* <img
@@ -252,7 +277,11 @@ const SingleBlog = ({ blog, query }) => {
 												/> */}
 											</div>
 											<div className="ExpandedView_Overview_Details_part">
+<<<<<<< HEAD
 												{blog.duration}
+=======
+												{/* {location.state.data.duration} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 											</div>
 											<div className="ExpandedView_Overview_Details_Icon">
 												{/* <img
@@ -261,14 +290,22 @@ const SingleBlog = ({ blog, query }) => {
 												/> */}
 											</div>
 											<div className="ExpandedView_Overview_Details_part">
+<<<<<<< HEAD
 												{blog.cost}
+=======
+												{/* {location.state.data.cost} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 											</div>
 										</div>
 									</div>
 									<hr className="style1" />
 									<div className="ExpandedView_Overview_Details_Description">
 										Tour Description:
+<<<<<<< HEAD
 										<p>{blog.description}</p>
+=======
+										{/* <p>{location.state.data.description}</p> */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 									</div>
 									<hr className="style1" />
 									<ul>
@@ -282,7 +319,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Route Type</h4>
+<<<<<<< HEAD
 													{blog.routeType}
+=======
+													{/* {location.state.data.routeType} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -296,7 +337,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Elevation Gain</h4>
+<<<<<<< HEAD
 													{/* {blog.elevationGain} */}
+=======
+													{/* {location.state.data.elevationGain} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -310,7 +355,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Altitude</h4>
+<<<<<<< HEAD
 													{/* {blog.altitude} */}
+=======
+													{/* {location.state.data.altitude} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -324,7 +373,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Cell Signal</h4>
+<<<<<<< HEAD
 													{blog.signal}
+=======
+													{/* {location.state.data.signal} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -338,7 +391,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Trail Traffic</h4>
+<<<<<<< HEAD
 													{/* {blog.traffic} */}
+=======
+													{/* {location.state.data.traffic} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -352,7 +409,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Dog Friendly</h4>
+<<<<<<< HEAD
 													{blog.dogFriendly}
+=======
+													{/* {location.state.data.dogFriendly} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -366,7 +427,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Kids</h4>
+<<<<<<< HEAD
 													{blog.kidsFriendly}
+=======
+													{/* {location.state.data.kidsFriendly} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -380,7 +445,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Bugs</h4>
+<<<<<<< HEAD
 													{blog.bugs}
+=======
+													{/* {location.state.data.bugs} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -394,7 +463,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Fitness Level</h4>
+<<<<<<< HEAD
 													{blog.fitnessLevel}
+=======
+													{/* {location.state.data.fitnessLevel} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -408,7 +481,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Visa</h4>
+<<<<<<< HEAD
 													{blog.visa}
+=======
+													{/* {location.state.data.visa} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -422,7 +499,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>What to do</h4>
+<<<<<<< HEAD
 													{blog.activities}
+=======
+													{/* {location.state.data.activities} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -436,7 +517,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Book in advance</h4>
+<<<<<<< HEAD
 													{blog.priorBooking}
+=======
+													{/* {location.state.data.priorBooking} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</li>
@@ -457,7 +542,11 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Best Months</h4>
+<<<<<<< HEAD
 													{blog.bestSeason}
+=======
+													{/* {location.state.data.bestSeason} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 											<div className="ExpandedView_BestTime_Container_Details_Item">
@@ -469,12 +558,20 @@ const SingleBlog = ({ blog, query }) => {
 												</div>
 												<div className="ExpandedView_Overview_DetailsList_Info">
 													<h4>Open Season</h4>
+<<<<<<< HEAD
 													{blog.openSeason}
+=======
+													{/* {location.state.data.openSeason} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 												</div>
 											</div>
 										</div>
 										<div className="ExpandedView_BestTime_Container_Text">
+<<<<<<< HEAD
 											{blog.bestSeasonDescription}
+=======
+											{/* {location.state.data.bestSeasonDescription} */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 										</div>
 									</div>
 								</section>
@@ -491,7 +588,11 @@ const SingleBlog = ({ blog, query }) => {
 															alt="Campsites"
 														/> */}
 														<h4>Campsites</h4>
+<<<<<<< HEAD
 														<p>{blog.camping}</p>
+=======
+														{/* <p>{location.state.data.camping}</p> */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 													</div>
 												</li>
 												<li>
@@ -501,7 +602,11 @@ const SingleBlog = ({ blog, query }) => {
 															alt="Hostels"
 														/> */}
 														<h4>Hostels</h4>
+<<<<<<< HEAD
 														<p>{blog.hostels}</p>
+=======
+														{/* <p>{location.state.data.hostels}</p> */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 													</div>
 												</li>
 												<li>
@@ -511,7 +616,11 @@ const SingleBlog = ({ blog, query }) => {
 															alt="Hotels"
 														/> */}
 														<h4>Hotels</h4>
+<<<<<<< HEAD
 														<p>{blog.hotels}</p>
+=======
+														{/* <p>{location.state.data.hotels}</p> */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 													</div>
 												</li>
 											</ul>
@@ -524,6 +633,7 @@ const SingleBlog = ({ blog, query }) => {
 									<div className="ExpandedView_Location_Container">
 										<div className="ExpandedView_Location_Topic">
 											<h4>Starting Point:</h4>
+<<<<<<< HEAD
 											<p>{blog.startingPoint}</p>
 										</div>
 										<div className="ExpandedView_Location_Topic">
@@ -541,6 +651,25 @@ const SingleBlog = ({ blog, query }) => {
 										<div className="ExpandedView_Location_Topic_FullWidth">
 											<h4>How to get there:</h4>
 											<p>{blog.transportation}</p>
+=======
+											{/* <p>{location.state.data.startingPoint}</p> */}
+										</div>
+										<div className="ExpandedView_Location_Topic">
+											<h4>Ending Point:</h4>
+											{/* <p>{location.state.data.endingPoint}</p> */}
+										</div>
+										<div className="ExpandedView_Location_Topic">
+											<h4>Get Directions:</h4>
+											{/* <p>{location.state.data.directions}</p> */}
+										</div>
+										<div className="ExpandedView_Location_Topic">
+											<h4>Parking:</h4>
+											{/* <p>{location.state.data.parking}</p> */}
+										</div>
+										<div className="ExpandedView_Location_Topic_FullWidth">
+											<h4>How to get there:</h4>
+											{/* <p>{location.state.data.transportation}</p> */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 										</div>
 									</div>
 								</section>
@@ -557,7 +686,11 @@ const SingleBlog = ({ blog, query }) => {
 															alt="Independent"
 														/> */}
 														<h4>Independent</h4>
+<<<<<<< HEAD
 														<p>{blog.individualCost}</p>
+=======
+														{/* <p>{location.state.data.individualCost}</p> */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 													</div>
 												</li>
 												<li>
@@ -567,7 +700,11 @@ const SingleBlog = ({ blog, query }) => {
 															alt="Guided"
 														/> */}
 														<h4>Guided</h4>
+<<<<<<< HEAD
 														<p>{blog.guidedCost}</p>
+=======
+														{/* <p>{location.state.data.guidedCost}</p> */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 													</div>
 												</li>
 											</ul>
@@ -578,18 +715,30 @@ const SingleBlog = ({ blog, query }) => {
 									<hr className="style1" />
 									<h3>Permits & Fees</h3>
 									<div className="ExpandedView_Permits_Container">
+<<<<<<< HEAD
 										<p>{blog.permits}</p>
+=======
+										{/* <p>{location.state.data.permits}</p> */}
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 									</div>
 								</section>
 								<section id="notes" className="ExpandedView_Notes">
 									<hr className="style1" />
 									<h3>Notes</h3>
 									<div className="ExpandedView_Notes_Container">
+<<<<<<< HEAD
 										<p>{blog.notes}</p>
 									</div>
 								</section>
 							</div>
 							{/* <section>
+=======
+										{/* <p>{location.state.data.notes}</p> */}
+									</div>
+								</section>
+							</div>
+							<section>
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 								<div className="container">
 									<h1 className="display-2 pb-3 pt-3 text-center font-weight-bold">
 										{blog.title}
@@ -609,6 +758,7 @@ const SingleBlog = ({ blog, query }) => {
 										<br />
 									</div>
 								</div>
+<<<<<<< HEAD
 							</section> */}
 						</div>
 
@@ -617,6 +767,16 @@ const SingleBlog = ({ blog, query }) => {
 								<div className="col-md-12 lead">{renderHTML(blog.body)}</div>
 							</section>
 						</div> */}
+=======
+							</section>
+						</div>
+
+						<div className="container">
+							<section>
+								<div className="col-md-12 lead">{renderHTML(blog.body)}</div>
+							</section>
+						</div>
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 
 						<div className="container">
 							<h4 className="text-center pt-5 pb-5 h2">Related blogs</h4>
@@ -633,12 +793,18 @@ const SingleBlog = ({ blog, query }) => {
 
 SingleBlog.getInitialProps = ({ query }) => {
 	return singleBlog(query.slug).then((data) => {
+<<<<<<< HEAD
 		console.log(data);
+=======
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 		if (data.error) {
 			console.log(data.error);
 		} else {
 			// console.log('GET INITIAL PROPS IN SINGLE BLOG', data);
+<<<<<<< HEAD
 			console.log(data);
+=======
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 			return { blog: data, query };
 		}
 	});

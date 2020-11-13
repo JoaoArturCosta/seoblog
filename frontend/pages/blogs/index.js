@@ -70,11 +70,17 @@ const Blogs = ({
 	const loadMoreButton = () => {
 		return (
 			size > 0 &&
+<<<<<<< HEAD
 			size >= 0 && (
 				<button
 					onClick={loadMore}
 					className="btn btn-outline-primary btn-lg btn-load-more">
 					Load more
+=======
+			size >= limit && (
+				<button onClick={loadMore} className="btn btn-outline-primary btn-lg">
+					Load mmore
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 				</button>
 			)
 		);
@@ -159,7 +165,11 @@ const Blogs = ({
 
 Blogs.getInitialProps = () => {
 	let skip = 0;
+<<<<<<< HEAD
 	let limit = 10;
+=======
+	let limit = 2;
+>>>>>>> a9ba29db8db282aede6123054cd12a4d1bc5e9c3
 	return listBlogsWithCategoriesAndTags(skip, limit).then((data) => {
 		if (data.error) {
 			console.log(data.error);
